@@ -5,7 +5,8 @@ import zipfile
 import os
 
 
-def get_attachments(): #caminho do scaner
+# Essa função recebe o link e os parametros para baixar arquivos
+def get_attachments(): 
     attachments_list = {}
     page = requests.get(
         f'https://www.gov.br/ans/pt-br/assuntos/consumidor/o-que-o-seu-plano-de-saude-deve-cobrir-1/o-que-e-o-rol-de-procedimentos-e-evento-em-saude')
@@ -19,8 +20,8 @@ def get_attachments(): #caminho do scaner
             attachments_list[anexo + extesion] = href
     return attachments_list
 
-
-def download_files(): #funcao para download em si
+# Função para download. ela mostra o caminho/local para armazenar
+def download_files():
     attachments_list = get_attachments()
     for attachment in attachments_list:
         res = requests.get(attachments_list[attachment])
@@ -29,8 +30,8 @@ def download_files(): #funcao para download em si
         with open(f"./files/{filename}", 'wb') as f:
             f.write(res.content)
 
-
-def zip_file(name): #funcao para converter para .rar
+# Função converte os arquivos baixados em determinada pasta
+def zip_file(name):
     print('Comprimindo dados...')
     handle = zipfile.ZipFile(f"./{name}", 'w')
     for x in os.listdir("./files"):
@@ -38,6 +39,6 @@ def zip_file(name): #funcao para converter para .rar
     print('Dados comprimidos!')
     handle.close()
 
-
+# Por fim chama as funções executando-as
 download_files()
-zip_file("files.rar") # salvar na pasta /teste_1
+zip_file("files.rar")
