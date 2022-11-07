@@ -62,9 +62,3 @@ def get_infos(
     """
     df = pd.read_sql(sqlalchemy.text(query), connection)
     return json.loads(df.to_json(orient='records', force_ascii=False, date_format="%d/%m/%Y"))
-
-
-
-if __name__ == '__main__':
-
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="info", reload=True)
