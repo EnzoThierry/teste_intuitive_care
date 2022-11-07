@@ -3,7 +3,7 @@ Esse código primeiro faz a coleta dos dados de maneira automatizada. Em seguida
 
 Com os dados devidamente tratados o código através das credenciais inseridas faz a comunicação com o bando de dados (MySQL) que por sua vez esta hospedado na AWS.
 
-Apos a leitura e
+Após a leitura e o envio para o banco, o código esta pronto para receber as query.
 ## Instalação
 
 Recomendavel ultilizar um ambiente virtual.
