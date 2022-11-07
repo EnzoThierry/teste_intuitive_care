@@ -6,13 +6,13 @@ Com os dados devidamente tratados o código através das credenciais inseridas f
 Após a leitura e o envio para o banco, o código esta pronto para receber as query.
 ## Instalação
 
-Recomendavel ultilizar um ambiente virtual.
+Recomendavel utilizar um ambiente virtual.
 
 ```
 $ python -m venv .venv
 ```
 
-Use este pip para instalar os requerimento nessesarios para o funcionamento.
+Use este pip para instalar os requerimentos nessesarios para o funcionamento.
 
 ```bash
 $ pip install -r requirements.txt
