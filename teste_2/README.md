@@ -3,7 +3,7 @@ Esse código lê um arquivo PDF e trata as tabelsa e legendas a serem corrigidas
 
 ## Instalação em Linux
 
-Abra em um ambiente Linux no VScode usando o WSL.
+Abra em um ambiente Linux no VScode usando o WL.
 
 ```bash
 /mnt/c/Users/name/Documents/teste_intuitive_care/teste_2$ code .
