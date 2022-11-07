@@ -28,6 +28,6 @@ $ python getfiles.py
 Load para o Banco.
 No terminal execute:
 ```bash
-$ python3 main.py
+$ python main.py
 ```
 
