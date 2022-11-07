@@ -5,13 +5,13 @@ Logo em seguida converte os arquivos baixados para uma pasta.rar
 
 ## Instalação
 
-Recomendavel ultilizar um ambiente virtual.
+Recomendavel utilizar um ambiente virtual.
 
 ```bash
 $ python -m venv .venv
 ```
 
-Use este pip para instalar os requerimento nessesarios para o funcionamento.
+Use este pip para instalar os requerimentos nessesarios para o funcionamento.
 
 ```bash
 $ pip install -r requirements.txt
