@@ -9,7 +9,7 @@ Após a leitura e o envio para o banco, o código esta pronto para receber as qu
 Recomendavel ultilizar um ambiente virtual.
 
 ```
-$ python -m venv .vnv
+$ python -m venv .venv
 ```
 
 Use este pip para instalar os requerimento nessesarios para o funcionamento.
