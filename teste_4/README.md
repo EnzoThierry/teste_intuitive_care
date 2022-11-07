@@ -3,13 +3,13 @@ Esse código a API consome os dados de um banco de dado (MySQL) através de cred
 onde com alguns parâmetros no código o servidor cria rotas que realizam uma busca textual nas tabelas no banco.
 ## Instalação
 
-Recomendavel ultilizar um ambiente virtual.
+Recomendavel utilizar um ambiente virtual.
 
 ```
 $ python -m venv .venv
 ```
 
-Use este pip para instalar os requerimento nessesarios para o funcionamento.
+Use este pip para instalar os requerimentos nessesarios para o funcionamento.
 
 ```bash
 $ pip install -r requirements.txt
